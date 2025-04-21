@@ -24,11 +24,48 @@
     grid-template-areas:
       "nav header header header"
       "nav main main main";
+    grid-template-rows:0.7fr auto;
 
   }
 
   header {
+  
     grid-area: header;
+    display:grid;
+    grid-template-areas:
+    "search search name"
+    "avatar avatar controls"
+    ;
+  }
+  .greeting{
+    grid-area:avatar;
+    margin-left:6em;
+  }
+  .controls{
+    grid-area:controls;
+  }
+  .name {
+    margin-top:2em;
+    margin-left:5em;
+    grid-area:name;
+  }
+  .search{
+    grid-area:search;
+    border:1px solid grey;
+    border-radius:30px;
+    height:3em;
+    margin-left:5em;
+    margin-top:2em;
+  }
+
+  .greet{
+    
+    font-weight:bold;
+    font-size:1.5em;
+  }
+  .user-big{
+    font-weight:bolder;
+    font-size:2em;
   }
 
   button {
