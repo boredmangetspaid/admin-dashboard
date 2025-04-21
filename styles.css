@@ -129,7 +129,7 @@
 
   .card {
    
-    border-left: 3px;
+ 
     background: white;
     border-radius: 8px;
     padding: 1rem;
@@ -137,15 +137,30 @@
     height: 250px;
     border-left: 10px solid rgba(240, 180, 41);
     
+    
+  }
+
+
+  .announcement-widget,.trending-widget{
+    padding: 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom:2px solid lightgrey;
+    height: 250px;
+    margin-right:2.5em;
+    border-radius:8px;
+    background-color: white;
   }
 
   .announcements {
-    margin:2.5em;
     grid-area: announcement;
-  
   }
 
+
   .trending {
-    margin:2.5em;
     grid-area: trending;
+
+  
+  }
+  .trending-widget li {
+    list-style: none;
   }
